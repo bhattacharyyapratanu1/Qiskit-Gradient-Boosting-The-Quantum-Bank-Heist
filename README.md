@@ -3,7 +3,7 @@
 
 ### A Comparative Study of Classical Optimization and the Quantum Approximate Optimization Algorithm (QAOA)
 
-## 1. Project Overview
+## 1. Project Overview 
 
 This project explores the application of classical optimization and quantum computing to a constrained customer-selection problem.
 
