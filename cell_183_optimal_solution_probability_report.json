@@ -1,0 +1,24 @@
+{
+    "cell": 183,
+    "state_probability_sum": 0.9999999999999987,
+    "customer_probability_sum": 0.9999999999999987,
+    "customer_probability_aggregation_verified": true,
+    "maximum_aggregation_difference": 0.0,
+    "classical_optimal_customers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "classical_optimal_customer_mask": 63,
+    "optimal_solution_probability": 0.001118986358105412,
+    "optimal_solution_probability_percent": 0.1118986358105412,
+    "optimal_probability_rank_all_combinations": 356,
+    "optimal_probability_rank_feasible_combinations": 153,
+    "optimal_solution_is_feasible": true,
+    "feasible_probability_mass": 0.24935157102605832,
+    "infeasible_probability_mass": 0.7506484289739404,
+    "number_of_feasible_combinations": 210
+}

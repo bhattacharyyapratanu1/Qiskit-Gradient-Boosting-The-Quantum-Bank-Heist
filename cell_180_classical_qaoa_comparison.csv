@@ -1,0 +1,3 @@
+Method,Objective,Reference
+Classical Exhaustive Optimization,25.30689110902086,Verified global optimum
+QAOA,11.406324,Conditional expected objective

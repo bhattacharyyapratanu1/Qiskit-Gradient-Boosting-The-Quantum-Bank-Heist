@@ -1,0 +1,21 @@
+{
+    "cell": 184,
+    "feasible_probability_mass": 0.24935157102605832,
+    "conditional_expected_objective": 11.406323895648086,
+    "unconditional_feasible_objective_contribution": 2.8441847830119196,
+    "classical_best_objective": 25.30689110902086,
+    "classical_best_customers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "classical_optimum_verified": true,
+    "previous_qaoa_objective": 11.406324,
+    "qaoa_objective_difference": 1.0435191377666797e-07,
+    "qaoa_benchmark_verified": true,
+    "qaoa_objective_quality_percent": 45.07200764610001,
+    "relative_objective_gap_percent": 54.92799235389999
+}

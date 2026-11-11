@@ -1,0 +1,50 @@
+{
+    "cell": 186,
+    "total_combinations": 210,
+    "budget_scenarios": [
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35
+    ],
+    "capacity_scenarios": [
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+    ],
+    "total_scenarios": 121,
+    "feasible_scenarios": 121,
+    "infeasible_scenarios": 0,
+    "baseline_budget": 25,
+    "baseline_capacity": 22,
+    "baseline_objective": 25.30689110902086,
+    "baseline_customers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "baseline_verified": true,
+    "scenarios_retaining_baseline_selection": 110,
+    "selection_stability_percent": 90.9090909090909,
+    "minimum_scenario_optimum": 21.067651346819705,
+    "maximum_scenario_optimum": 25.30689110902086,
+    "heatmap": "/content/ATMIQ_FINAL_RESULTS/cell_186_objective_sensitivity_heatmap.png"
+}

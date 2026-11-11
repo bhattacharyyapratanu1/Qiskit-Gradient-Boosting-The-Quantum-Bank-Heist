@@ -1,0 +1,32 @@
+{
+    "project": "ATMIQ Hackathon",
+    "created_at": "2026-11-11T12:50:43.635129",
+    "files_included": [
+        "cell_179_top10_classical_solutions.csv",
+        "cell_179_all_feasible_classical_solutions.csv",
+        "cell_179_classical_verification.json",
+        "cell_180_classical_qaoa_comparison.csv",
+        "cell_180_final_performance_report.json",
+        "cell_182_statevector_consistency_report.json",
+        "cell_183_top_qaoa_feasible_solutions.csv",
+        "cell_183_optimal_solution_probability_report.json",
+        "cell_184_top_feasible_by_objective.csv",
+        "cell_184_objective_consistency_report.json",
+        "cell_185_classical_vs_qaoa.png",
+        "cell_185_feasibility_probability.png",
+        "cell_185_top10_qaoa_probability.png",
+        "cell_185_top10_objective.png",
+        "cell_186_budget_capacity_sensitivity.csv",
+        "cell_186_sensitivity_report.json",
+        "cell_186_objective_sensitivity_heatmap.png",
+        "cell_187_final_project_summary.json",
+        "cell_187_final_project_metrics.csv"
+    ],
+    "missing_files": [],
+    "total_files_included": 20,
+    "readme": "README_ATMIQ_SUBMISSION.txt",
+    "classical_optimum": 25.30689110902086,
+    "qaoa_conditional_objective": 11.406323895648086,
+    "qaoa_quality_percent": 45.0720076461,
+    "selection_stability_percent": 90.9090909090909
+}

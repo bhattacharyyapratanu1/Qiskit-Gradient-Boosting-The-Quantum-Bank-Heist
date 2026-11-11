@@ -1,0 +1,9 @@
+Metric,Value
+Classical optimal objective,25.30689110902086
+QAOA conditional objective,11.406323895648086
+QAOA objective quality (%),45.07200764610001
+QAOA relative objective gap (%),54.92799235389999
+QAOA feasible probability (%),24.93515710260583
+Classical selection stability (%),90.9090909090909
+Sensitivity scenarios,121.0
+Classical combinations evaluated,210.0

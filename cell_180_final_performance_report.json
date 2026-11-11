@@ -1,0 +1,21 @@
+{
+    "cell": 180,
+    "timestamp": "2026-11-11T12:50:35.462234",
+    "classical_method": "Exhaustive feasible-solution enumeration",
+    "quantum_method": "QAOA",
+    "classical_optimal_objective": 25.30689110902086,
+    "qaoa_conditional_expected_objective": 11.406324,
+    "qaoa_objective_quality_percent": 45.07200805844585,
+    "relative_objective_gap_percent": 54.92799194155415,
+    "absolute_objective_difference": 13.90056710902086,
+    "configuration": {
+        "number_of_customers": 10,
+        "required_selections": 6,
+        "budget_limit": 25,
+        "capacity_limit": 22,
+        "number_of_qubits": 20,
+        "number_of_quantum_states": 1048576
+    },
+    "classical_optimum_independently_verified": true,
+    "interpretation": "QAOA conditional expected objective is compared against the independently verified classical optimum. These figures do not by themselves establish quantum advantage."
+}

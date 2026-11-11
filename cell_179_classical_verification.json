@@ -1,0 +1,20 @@
+{
+    "cell": 179,
+    "timestamp": "2026-11-11T12:50:35.414447",
+    "total_customers": 10,
+    "total_combinations": 210,
+    "feasible_combinations": 210,
+    "independent_classical_optimum": 25.30689110902086,
+    "previous_classical_benchmark": 25.306891,
+    "absolute_difference": 1.0902085989528132e-07,
+    "selected_customers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "budget_used": 12.0,
+    "capacity_used": 13.0
+}

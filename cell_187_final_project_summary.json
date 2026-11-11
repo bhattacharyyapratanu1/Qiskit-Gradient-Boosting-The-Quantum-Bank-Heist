@@ -1,0 +1,44 @@
+{
+    "project": "ATMIQ Hackathon - Classical ML and QAOA Optimization",
+    "final_cell": 187,
+    "classical_optimization": {
+        "customers": 10,
+        "required_selections": 6,
+        "combinations_evaluated": 210,
+        "optimal_customers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "optimal_objective": 25.30689110902086,
+        "budget_limit": 25,
+        "capacity_limit": 22,
+        "verified": true
+    },
+    "qaoa": {
+        "qubits": 20,
+        "statevector_dimension": 1048576,
+        "conditional_expected_objective": 11.406323895648086,
+        "objective_quality_percent": 45.07200764610001,
+        "relative_objective_gap_percent": 54.92799235389999,
+        "feasible_probability_percent": 24.93515710260583,
+        "probability_sum": 0.9999999999999987,
+        "probability_distribution_valid": true
+    },
+    "sensitivity_analysis": {
+        "scenarios_evaluated": 121,
+        "feasible_scenarios": 121,
+        "selection_stability_percent": 90.9090909090909,
+        "minimum_optimum": 21.067651346819705,
+        "maximum_optimum": 25.30689110902086,
+        "verified": true
+    },
+    "output_audit": {
+        "expected_files": 14,
+        "existing_files": 14,
+        "missing_files": 0
+    }
+}

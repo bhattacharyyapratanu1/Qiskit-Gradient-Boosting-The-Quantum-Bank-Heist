@@ -1,0 +1,67 @@
+{
+    "cell": 182,
+    "statevector_dimension": 1048576,
+    "probability_sum": 0.9999999999999987,
+    "minimum_probability": 2.699970061748159e-12,
+    "maximum_probability": 1.0577359029374067e-05,
+    "normalization_valid": true,
+    "nonnegative_valid": true,
+    "finite_valid": true,
+    "matching_probability_arrays": [
+        "probabilities",
+        "nonzero_probabilities",
+        "probabilities_171",
+        "probabilities_173",
+        "probabilities_array_174"
+    ],
+    "probability_array_comparisons": [
+        {
+            "variable": "probabilities",
+            "probability_sum": 0.9999999999999987,
+            "maximum_absolute_difference": 0.0,
+            "mean_absolute_difference": 0.0,
+            "matches_final_statevector": true
+        },
+        {
+            "variable": "state_probabilities",
+            "probability_sum": 1.0000000000000029,
+            "maximum_absolute_difference": 0.00028442665960010436,
+            "mean_absolute_difference": 1.063525239100054e-06,
+            "matches_final_statevector": false
+        },
+        {
+            "variable": "nonzero_probabilities",
+            "probability_sum": 0.9999999999999987,
+            "maximum_absolute_difference": 0.0,
+            "mean_absolute_difference": 0.0,
+            "matches_final_statevector": true
+        },
+        {
+            "variable": "probabilities_171",
+            "probability_sum": 0.9999999999999987,
+            "maximum_absolute_difference": 0.0,
+            "mean_absolute_difference": 0.0,
+            "matches_final_statevector": true
+        },
+        {
+            "variable": "probabilities_173",
+            "probability_sum": 0.9999999999999987,
+            "maximum_absolute_difference": 0.0,
+            "mean_absolute_difference": 0.0,
+            "matches_final_statevector": true
+        },
+        {
+            "variable": "probabilities_array_174",
+            "probability_sum": 0.9999999999999987,
+            "maximum_absolute_difference": 0.0,
+            "mean_absolute_difference": 0.0,
+            "matches_final_statevector": true
+        }
+    ],
+    "customer_probability_validation": {
+        "size": 1024,
+        "sum": 0.9999999999999987,
+        "normalized": true,
+        "finite": true
+    }
+}
