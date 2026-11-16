@@ -1,242 +1,474 @@
-# ATMIQ HACKATHON
-# Hybrid Intelligence: Classical Machine Learning and Quantum Optimization
+<!-- ======================================================= -->
+<!--                  ATMIQ HACKATHON 2026                 -->
+<!-- ======================================================= -->
 
-### A Comparative Study of Classical Optimization and the Quantum Approximate Optimization Algorithm (QAOA)
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:080B1A,45:302B75,100:00C9D8&height=230&section=header&text=HYBRID%20INTELLIGENCE&fontSize=43&fontColor=FFFFFF&fontAlignY=40&animation=fadeIn&desc=CLASSICAL%20OPTIMIZATION%20%7C%20QUANTUM%20COMPUTING&descSize=15&descAlignY=59&descColor=C8D7FF" width="100%" alt="Hybrid Intelligence animated banner"/>
+</p>
 
-## 1. Project Overview 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=750&lines=Exploring+the+Future+of+Hybrid+Optimization;Classical+Intelligence+meets+Quantum+Computing;Benchmarking+QAOA+Against+Classical+Optimization;An+Experimental+Study+in+Quantum+Algorithms" alt="Animated project introduction"/>
+</p>
 
-This project explores the application of classical optimization and quantum computing to a constrained customer-selection problem.
+<p align="center">
+  <img src="https://img.shields.io/badge/EVENT-ATMIQ%20HACKATHON%202026-635BFF?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/DOMAIN-QUANTUM%20COMPUTING-00B8D9?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/ALGORITHM-QAOA-8957E5?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/LANGUAGE-PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+</p>
 
-It compares a classically optimized solution against the Quantum Approximate Optimization Algorithm (QAOA) using quantum circuit simulation and statevector probability analysis.
+<p align="center">
+  <b>A Comparative Study of Classical Optimization and the Quantum Approximate Optimization Algorithm</b>
+</p>
 
-The primary objective is to investigate how quantum optimization performs against a rigorously verified classical benchmark while evaluating solution quality, feasibility, and sensitivity to changing resource constraints.
+---
 
-The project was developed as part of the **ATMIQ Hackathon 2026**.
+## 01. Research Overview
 
-## 2. Problem Statement
+What happens when classical optimization meets quantum computing?
 
-The optimization problem involves selecting a fixed number of customers from a given customer pool while satisfying budget and capacity constraints.
+**HYBRID INTELLIGENCE** investigates this question through a constrained customer-selection problem, comparing an exhaustive classical optimization strategy against the Quantum Approximate Optimization Algorithm (QAOA).
 
-The objective is to maximize the overall selection objective without violating the specified constraints.
+The research establishes a verified classical benchmark and evaluates the quantum implementation through circuit simulation, statevector probability analysis, objective evaluation and constraint feasibility.
 
-### Problem Configuration
+The experiment focuses on three fundamental questions:
+
+- How effectively can QAOA approximate a constrained optimization solution?
+- How does its solution quality compare with an exhaustive classical benchmark?
+- How stable is the optimization model when resource constraints change?
+
+Rather than presuming quantum superiority, the project evaluates both approaches using measurable experimental results.
+
+<p align="center">
+  <img src="assets/quantum-computing.gif" width="85%" alt="Quantum computing research animation"/>
+</p>
+
+<p align="center">
+  <sub>Conceptual visualization of quantum computation and hybrid optimization.</sub>
+</p>
+
+---
+
+## 02. The Optimization Challenge
+
+The experiment considers a customer-selection problem in which exactly six customers must be selected from a pool of ten.
+
+The selected combination must satisfy two resource constraints:
+
+- Budget limitation.
+- Capacity limitation.
+
+The objective is to maximize the overall selection value while maintaining feasibility.
+
+### Experimental Parameters
 
 | Parameter | Value |
-|---|---:|
-| Total customers | 10 |
+|:---|---:|
+| Customer pool | 10 |
 | Required selections | 6 |
 | Baseline budget | 25 |
 | Baseline capacity | 22 |
-| Total combinations evaluated | 210 |
+| Search space | 210 combinations |
 
-Two optimization approaches are investigated:
+The total classical search space is:
 
-- **Classical Optimization:** Exhaustive evaluation of all possible customer combinations to identify the global optimum.
-- **Quantum Optimization:** QAOA-based optimization formulation evaluated through quantum statevector simulation.
+\[
+\binom{10}{6}=210
+\]
 
-## 3. Classical Optimization Results
+Every possible six-customer combination is evaluated by the classical benchmark.
 
-The classical optimizer evaluated all 210 possible customer combinations and identified the best verified solution.
+---
 
-| Metric | Result |
-|---|---:|
-| Optimal customer selection | [1, 2, 3, 4, 5, 6] |
-| Optimal objective value | 25.3068911090 |
+## 03. Two Optimization Paradigms
+
+<p align="center">
+  <img src="assets/hybrid-architecture.gif" width="95%" alt="Hybrid classical quantum optimization architecture"/>
+</p>
+
+### Classical Optimization
+
+The classical approach uses exhaustive combinatorial search to evaluate all 210 possible selections.
+
+It identifies the best feasible combination and establishes the reference objective for the quantum experiment.
+
+| Evaluation | Result |
+|:---|---:|
+| Optimal selection | `[1, 2, 3, 4, 5, 6]` |
+| Optimal objective | **25.3068911090** |
 | Combinations evaluated | 210 |
 | Exhaustive verification | Passed |
 
-The classical solution serves as the benchmark for evaluating the performance of the QAOA implementation.
+### Quantum Optimization
 
-## 4. Quantum Optimization Using QAOA
+The quantum approach uses the Quantum Approximate Optimization Algorithm (QAOA).
 
-The Quantum Approximate Optimization Algorithm was implemented to investigate the customer-selection problem using a quantum circuit representation.
+The implementation evaluates a quantum statevector and analyzes the resulting probability distribution, objective quality and feasibility.
 
-The quantum simulation was evaluated through statevector probabilities, objective calculations, and feasibility analysis.
-
-### Quantum Configuration and Results
-
-| Metric | Result |
-|---|---:|
-| Total qubits | 20 |
+| Configuration | Result |
+|:---|---:|
+| Qubits | 20 |
 | Statevector dimension | 1,048,576 |
 | Conditional expected objective | 11.4063238956 |
 | Objective quality | 45.0720% |
 | Relative objective gap | 54.9280% |
 | Feasible probability | 24.9352% |
 
-### Classical vs Quantum Comparison
+The simulated state space contains:
 
-| Metric | Classical Optimization | QAOA |
-|---|---:|---:|
+\[
+2^{20}=1,048,576
+\]
+
+complex probability amplitudes.
+
+---
+
+## 04. Experimental Performance
+
+### Classical vs Quantum
+
+<p align="center">
+  <img src="assets/classical-vs-quantum.gif" width="95%" alt="Animated classical versus quantum performance comparison"/>
+</p>
+
+| Performance Metric | Classical | QAOA |
+|:---|---:|---:|
 | Objective value | 25.306891 | 11.406324 |
 | Relative objective quality | 100% | 45.0720% |
+| Optimization method | Exhaustive Search | QAOA |
+| Global optimum verified | Yes | Not established |
 
-The results indicate that the current classical optimizer outperforms the QAOA implementation for the tested configuration.
+### Objective Quality
 
-## 5. Sensitivity Analysis
+\[
+\text{Objective Quality}=
+\frac{11.4063238956}{25.3068911090}\times100
+\]
 
-A sensitivity analysis was performed to evaluate the stability of the optimization model under different budget and capacity constraints.
+<p align="center">
+  <img src="https://img.shields.io/badge/CLASSICAL%20BENCHMARK-100%25-168B72?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/QAOA%20QUALITY-45.0720%25-7657D5?style=for-the-badge"/>
+</p>
+
+The current QAOA implementation achieved 45.0720% of the classical benchmark objective.
+
+The results indicate that classical exhaustive optimization outperformed the current quantum implementation under the tested configuration.
+
+---
+
+## 05. Quantum Statevector Analysis
+
+<p align="center">
+  <img src="assets/quantum-statevector.gif" width="95%" alt="Quantum statevector probability distribution animation"/>
+</p>
+
+The quantum simulation evaluates the probability amplitudes associated with the computational basis states.
+
+The statevector is used to investigate:
+
+- Quantum state probabilities.
+- Distribution of candidate solutions.
+- Objective values associated with candidate states.
+- Constraint feasibility.
+- Probability normalization.
+
+This analysis provides insight into how the quantum optimization formulation distributes probability across possible computational states.
+
+---
+
+## 06. Constraint Feasibility
+
+<p align="center">
+  <img src="assets/feasibility-analysis.gif" width="90%" alt="Animated feasibility analysis"/>
+</p>
+
+A feasible solution must satisfy the selection, budget and capacity constraints.
+
+The reported feasible probability is:
+
+<p align="center">
+  <img src="https://img.shields.io/badge/FEASIBLE%20PROBABILITY-24.9352%25-00A6C8?style=for-the-badge"/>
+</p>
+
+This result highlights the importance of constraint encoding and penalty optimization when implementing QAOA for constrained combinatorial problems.
+
+---
+
+## 07. Sensitivity Analysis
+
+<p align="center">
+  <img src="assets/sensitivity-analysis.gif" width="95%" alt="Animated budget capacity sensitivity analysis"/>
+</p>
+
+The optimization model was evaluated under different budget and capacity configurations to investigate the stability of the optimal selection.
 
 | Metric | Result |
-|---|---:|
-| Budget-capacity scenarios evaluated | 121 |
+|:---|---:|
+| Scenarios evaluated | 121 |
 | Scenarios with feasible solutions | 121 |
 | Baseline optimal selection stability | 90.9091% |
 
-This analysis provides insight into the robustness of the optimization solution and its response to changing resource constraints.
+The results demonstrate how the optimal selection responds to variations in available resources.
 
-## 6. Prerequisites
+---
 
-Before running the project, ensure that the following software and libraries are available.
+## 08. Mathematical Formulation
 
-### Software Requirements
+Let each customer be represented by a binary decision variable:
 
-- Python 3.10 or compatible version
-- Google Colab or Jupyter Notebook
-- Internet connection for installing dependencies
-- Sufficient RAM for quantum statevector simulation
+\[
+x_i\in\{0,1\}
+\]
 
-### Required Python Libraries
+Where:
 
-- NumPy
-- Pandas
-- SciPy
-- Matplotlib
-- Seaborn
-- Qiskit
-- Qiskit Aer
+- \(x_i=1\): Customer selected.
+- \(x_i=0\): Customer not selected.
 
-### Hardware Recommendations
+The selection constraint is:
 
-- Minimum 8 GB RAM recommended
-- 16 GB RAM or higher recommended for more comfortable statevector simulation
-- Multi-core processor recommended
+\[
+\sum_{i=1}^{10}x_i=6
+\]
 
-**Note:** The 20-qubit statevector contains 1,048,576 complex amplitudes. Memory requirements depend on data types, simulator implementation, and additional intermediate arrays.
+The general optimization objective is:
 
-## 7. Installation and Setup
+\[
+\max \sum_{i=1}^{10}v_i x_i
+\]
 
-### Option 1: Google Colab (Recommended)
+Subject to:
+
+**Budget constraint**
+
+\[
+\sum_{i=1}^{10}b_i x_i\leq25
+\]
+
+**Capacity constraint**
+
+\[
+\sum_{i=1}^{10}c_i x_i\leq22
+\]
+
+Where:
+
+- \(v_i\) represents the objective contribution.
+- \(b_i\) represents budget consumption.
+- \(c_i\) represents capacity consumption.
+
+This is the general mathematical representation; the exact coefficients and QAOA constraint encoding are determined by the notebook implementation.
+
+---
+
+## 09. Technology Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,numpy,scipy,git,github" alt="Technology stack"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/QISKIT-6929C4?style=flat-square"/>
+  <img src="https://img.shields.io/badge/QISKIT%20AER-6929C4?style=flat-square"/>
+  <img src="https://img.shields.io/badge/PANDAS-150458?style=flat-square"/>
+  <img src="https://img.shields.io/badge/MATPLOTLIB-11557C?style=flat-square"/>
+  <img src="https://img.shields.io/badge/SEABORN-4385B5?style=flat-square"/>
+  <img src="https://img.shields.io/badge/JUPYTER-F37626?style=flat-square"/>
+</p>
+
+| Layer | Technology |
+|:---|:---|
+| Programming | Python |
+| Quantum Framework | Qiskit |
+| Quantum Simulator | Qiskit Aer |
+| Numerical Computing | NumPy, SciPy |
+| Data Processing | Pandas |
+| Visualization | Matplotlib, Seaborn |
+| Development | Google Colab, Jupyter Notebook |
+| Classical Method | Exhaustive Search |
+| Quantum Method | QAOA |
+
+---
+
+## 10. Installation and Execution
+
+### Requirements
+
+- Python 3.10 or compatible version.
+- Google Colab or Jupyter Notebook.
+- Minimum 8 GB RAM recommended.
+- 16 GB RAM or higher recommended for more comfortable simulation.
+
+### Google Colab
 
 1. Open Google Colab.
-2. Upload `Classical_ML.ipynb` or open it from Google Drive.
-3. Select a Python runtime.
-4. Install the required dependencies in a notebook cell.
-
-Example installation command:
+2. Upload `Classical_ML.ipynb`.
+3. Install the required dependencies.
 
 ```python
 !pip install numpy pandas scipy matplotlib seaborn qiskit qiskit-aer
 ```
 
-5. Run the notebook cells sequentially.
-6. Verify the classical optimization results.
-7. Execute the QAOA simulation and validation cells.
-8. Review the generated reports and visualizations.
+4. Execute the notebook cells sequentially.
+5. Run the classical optimization benchmark.
+6. Execute the QAOA simulation.
+7. Review the generated results and visualizations.
 
-### Option 2: Local Jupyter Notebook
+### Local Installation
 
-Clone the project repository or download the notebook.
+Clone the repository:
 
-Install the dependencies:
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Navigate to the project:
+
+```bash
+cd ATMIQ_HACKATHON
+```
+
+Install dependencies:
 
 ```bash
 pip install numpy pandas scipy matplotlib seaborn qiskit qiskit-aer
 ```
 
-Launch Jupyter Notebook:
+Launch Jupyter:
 
 ```bash
 jupyter notebook
 ```
 
-Open `Classical_ML.ipynb` and execute the cells sequentially.
+Open `Classical_ML.ipynb` and execute the notebook.
 
-**Note:** Exact dependency versions may vary. For reproducibility, use compatible versions of the libraries and the same configuration used during the original experiment.
+---
 
-## 8. Project Structure
+## 11. Repository Architecture
 
 ```text
 ATMIQ_HACKATHON/
 │
 ├── Classical_ML.ipynb
 │
+├── assets/
+│   ├── quantum-computing.gif
+│   ├── hybrid-architecture.gif
+│   ├── classical-vs-quantum.gif
+│   ├── quantum-statevector.gif
+│   ├── feasibility-analysis.gif
+│   └── sensitivity-analysis.gif
+│
 ├── results/
-│   ├── JSON reports
-│   ├── CSV result tables
-│   └── Optimization visualizations
+│   ├── reports/
+│   ├── tables/
+│   └── visualizations/
+│
+├── requirements.txt
 │
 └── README.md
 ```
 
-The results directory represents the exported experiment outputs. Actual filenames may differ depending on the notebook execution and export configuration.
-
-## 9. Validation and Verification
-
-The final validation process covered the following components:
-
-- Classical optimization benchmark verification.
-- Exhaustive combination evaluation.
-- QAOA statevector dimension verification.
-- Quantum probability normalization.
-- Feasibility probability analysis.
-- Budget-capacity sensitivity analysis.
-- Final benchmark verification.
-- Results and visualization exports.
-
-The validation process helps ensure that the reported experimental results are consistent with the implemented optimization model.
-
-## 10. Key Findings
-
-The experiment demonstrates several important observations:
-
-1. Classical exhaustive optimization successfully identified the best solution for the tested problem.
-2. QAOA provided an alternative quantum optimization framework for the same problem.
-3. The current QAOA implementation achieved 45.0720% of the classical benchmark objective.
-4. The measured feasible probability was 24.9352%.
-5. Sensitivity analysis showed 90.9091% baseline optimal selection stability.
-
-**Research limitation:** These experimental results do not demonstrate quantum advantage or quantum speedup. The classical approach remains superior for the tested problem configuration.
-
-## 11. Future Improvements
-
-Potential directions for further development include:
-
-- Improving QAOA parameter optimization.
-- Experimenting with different circuit depths and QAOA layers.
-- Refining penalty coefficients and constraint encoding.
-- Exploring alternative quantum optimization algorithms.
-- Investigating hardware-based quantum execution.
-- Evaluating larger customer-selection problems.
-- Comparing quantum and classical performance across multiple problem sizes.
-
-## 12. Technologies Used
-
-| Category | Technologies |
-|---|---|
-| Programming Language | Python |
-| Quantum Framework | Qiskit |
-| Quantum Simulation | Qiskit Aer |
-| Numerical Computing | NumPy, SciPy |
-| Data Processing | Pandas |
-| Data Visualization | Matplotlib, Seaborn |
-| Development Environment | Google Colab, Jupyter Notebook |
-| Optimization Approach | Classical Exhaustive Search, QAOA |
-
-## 13. Conclusion
-
-This project presents an experimental comparison between classical optimization and quantum optimization using QAOA for a constrained customer-selection problem.
-
-The classical optimizer established a verified benchmark, while the QAOA implementation provided an opportunity to investigate quantum state probabilities, feasibility, and optimization performance.
-
-Although the current QAOA results do not outperform the classical benchmark, the experiment provides a foundation for further research into hybrid classical-quantum optimization approaches.
-
-The broader objective is to understand where quantum algorithms may complement classical computational techniques and how hybrid optimization strategies can contribute to solving increasingly complex decision-making problems.
+The structure represents the recommended organization. Include only files that actually exist in the repository.
 
 ---
 
-**Project:** ATMIQ HACKATHON 2026
+## 12. Validation and Verification
 
-**Focus Areas:** Classical Optimization, Quantum Computing, QAOA, Hybrid Intelligence, Combinatorial Optimization
+The experimental validation covers:
 
-**Core Objective:** Evaluating quantum optimization against a verified classical benchmark.
+| Validation | Purpose |
+|:---|:---|
+| Exhaustive search | Evaluate all 210 combinations |
+| Classical benchmark | Verify the best solution |
+| Statevector dimension | Check the 20-qubit simulation |
+| Probability normalization | Validate the probability distribution |
+| Feasibility analysis | Evaluate constraint satisfaction |
+| Sensitivity analysis | Examine resource stability |
+| Result exports | Preserve experiment outputs |
+
+---
+
+## 13. Research Findings
+
+The experiment produces several important observations.
+
+**Classical optimization establishes a verified benchmark.**
+
+Exhaustive search identifies the best feasible solution for the tested problem.
+
+**QAOA provides an alternative optimization framework.**
+
+Quantum statevector simulation allows the investigation of probability distributions and feasibility.
+
+**The current classical approach performs better.**
+
+The QAOA implementation achieved 45.0720% of the classical benchmark objective.
+
+**Constraint satisfaction remains challenging.**
+
+The reported feasible probability is 24.9352%.
+
+**The model demonstrates sensitivity stability.**
+
+The baseline optimal selection stability is 90.9091% across the evaluated scenarios.
+
+### Research Limitation
+
+The results do not establish quantum advantage or quantum speedup.
+
+For the tested configuration, classical exhaustive optimization remains superior.
+
+---
+
+## 14. Future Research
+
+Potential research directions include:
+
+- Increasing QAOA circuit depth.
+- Improving variational parameter optimization.
+- Refining penalty coefficients and constraint encoding.
+- Exploring alternative quantum optimization algorithms.
+- Evaluating quantum hardware execution.
+- Scaling the customer-selection problem.
+- Comparing against additional classical optimization techniques.
+- Studying convergence, computational cost and solution quality.
+
+---
+
+## 15. Project Information
+
+| Attribute | Details |
+|:---|:---|
+| Project Title | HYBRID INTELLIGENCE |
+| Event | ATMIQ HACKATHON 2026 |
+| Research Area | Hybrid Intelligence |
+| Primary Algorithm | QAOA |
+| Classical Benchmark | Exhaustive Search |
+| Quantum Simulation | Statevector |
+| Programming Language | Python |
+
+---
+
+## Conclusion
+
+**HYBRID INTELLIGENCE** investigates the intersection of classical optimization and quantum computing through a measurable experimental comparison.
+
+The classical optimizer establishes a verified benchmark, while QAOA provides an alternative quantum framework for investigating constrained combinatorial optimization.
+
+Although the current quantum implementation does not outperform the classical approach, the experiment provides valuable insight into quantum probability distributions, feasibility, optimization quality and resource sensitivity.
+
+The research emphasizes a fundamental principle:
+
+> The future of optimization should be driven by measurable computational performance, rigorous benchmarking and intelligent integration of classical and quantum techniques.
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9D8,50:302B75,100:080B1A&height=130&section=footer&animation=fadeIn" width="100%" alt="Animated footer"/>
+</p>
+
+<p align="center">
+  <b>ATMIQ HACKATHON 2026</b>
+  <br/>
+  <sub>CLASSICAL INTELLIGENCE. QUANTUM POSSIBILITIES. HYBRID FUTURE.</sub>
+</p>
