@@ -1,0 +1,6 @@
+Dataset,Rows,Columns,Missing Values,Duplicate Rows
+Stage1_Train,300,17,0,0
+Stage1_Test,100,15,0,0
+Stage2_Data,400,5,0,0
+Stage2_Constraints,6,4,0,0
+README,20,2,0,0

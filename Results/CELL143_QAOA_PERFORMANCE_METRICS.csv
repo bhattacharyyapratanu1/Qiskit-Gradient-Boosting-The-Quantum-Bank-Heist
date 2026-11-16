@@ -1,0 +1,11 @@
+Metric,Value
+Feasible probability (%),0.004668243205894582
+Infeasible probability (%),99.99533175679439
+Most probable feasible objective,18.942568297170077
+Classical optimum objective,37.30689110902086
+Conditional expected objective,23.28857961552997
+Objective retention (%),50.77498481933203
+Conditional objective retention (%),62.424337496990624
+Sampling objective gap (%),49.22501518066796
+Classical optimum sampling rank,93.0
+Classical optimum sampling probability,8.275199109526147e-08

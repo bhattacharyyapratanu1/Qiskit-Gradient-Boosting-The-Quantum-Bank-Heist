@@ -1,0 +1,2 @@
+selected_customers,customer_ids,total_contact_cost,budget_limit,total_capacity,capacity_limit,expected_deposit_contribution,expected_net_value,all_constraints_satisfied,independent_verification_passed
+6,"C0081,C0031,C0079,C0327,C0170,C0349",12,25,13,22,49.30689110902087,37.30689110902086,True,True

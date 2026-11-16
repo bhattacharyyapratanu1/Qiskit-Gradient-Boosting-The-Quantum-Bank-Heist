@@ -1,0 +1,45 @@
+{
+    "cell": 144,
+    "qubits": 20,
+    "customer_variables": 10,
+    "slack_qubits": 10,
+    "total_encoded_states": 1048576,
+    "required_customers": 6,
+    "budget_limit": 25.0,
+    "capacity_limit": 22.0,
+    "objective": "expected_value - contact_cost",
+    "classical_net_optimum": 25.30689110902086,
+    "classical_optimum_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "feasible_classical_combinations": 210,
+    "penalties_tested": [
+        1,
+        5,
+        10,
+        25,
+        50,
+        100,
+        200,
+        500
+    ],
+    "feasible_penalties": [
+        1,
+        5,
+        10,
+        25,
+        50,
+        100,
+        200,
+        500
+    ],
+    "all_penalty_tests_completed": true,
+    "minimum_penalty": 1,
+    "maximum_penalty": 500,
+    "results_file": "/content/drive/MyDrive/ATMIQ_HACKATHON/Results/CELL144_QAOA_PENALTY_SENSITIVITY.csv"
+}

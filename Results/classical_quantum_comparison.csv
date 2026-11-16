@@ -1,0 +1,3 @@
+Method,Selected,Expected Net Value,Total Cost,Total Capacity
+Classical Exact Enumeration,6,39.92586925037328,12,14
+QAOA Statevector Simulation,6,36.7327593076059,13,15

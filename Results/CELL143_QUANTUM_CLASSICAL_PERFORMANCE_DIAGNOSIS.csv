@@ -1,0 +1,5 @@
+Method,Objective Value,Feasible Probability (%),Sampling Rank,Status
+Classical Exhaustive Optimization,37.30689110902086,100.0,1.0,Verified optimum
+QAOA Most Probable Feasible State,18.942568297170077,0.004668243205894582,1.0,Feasible sampled solution
+QAOA Classical Optimum State,37.30689110902086,0.004668243205894582,93.0,Optimum present in distribution
+QAOA Conditional Expected Objective,23.28857961552997,0.004668243205894582,,Expected value conditioned on feasibility

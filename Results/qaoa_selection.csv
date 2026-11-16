@@ -1,0 +1,7 @@
+rank,customer_id,age,job,marital,education,default,balance,housing,loan,contact,day,month,campaign,pdays,previous,poutcome,predicted_probability,test_row,contact_cost,expected_deposit_value,capacity_units,customer_segment,expected_net_value
+1,C0031,35,blue-collar,married,secondary,no,262,no,no,cellular,2,jul,2,109,4,success,0.6877902845393781,5,2,13,1,D,6.941273699011916
+2,C0081,48,technician,married,secondary,no,568,yes,no,cellular,2,sep,2,386,1,success,0.6751672984148837,42,4,17,1,C,7.4778440730530225
+3,C0079,31,student,single,tertiary,no,64,no,no,cellular,15,sep,1,105,2,success,0.665590423655954,14,3,24,3,A,12.974170167742896
+4,C0327,49,services,divorced,secondary,no,3250,no,no,unknown,16,jun,3,-1,0,unknown,0.2576007046979734,49,1,25,4,B,5.440017617449335
+6,C0188,40,management,married,tertiary,no,1584,yes,no,telephone,21,nov,1,-1,0,unknown,0.2256471542523294,21,2,13,2,B,0.9334130052802823
+10,C0256,56,admin.,married,secondary,no,1270,yes,no,cellular,17,nov,2,165,2,other,0.1802745793212933,36,1,22,4,A,2.9660407450684523

@@ -1,0 +1,2 @@
+selected_customer_count,success_threshold,expected_subscribers,probability_at_least_3,probability_at_least_3_percent,probability_fewer_than_3,monte_carlo_probability,monte_carlo_simulations,method,assumption
+6,3,2.6275754020361584,0.5479456707255117,54.79456707255117,0.4520543292744883,0.5478,1000000,Exact Poisson-binomial,Independent customer subscription outcomes

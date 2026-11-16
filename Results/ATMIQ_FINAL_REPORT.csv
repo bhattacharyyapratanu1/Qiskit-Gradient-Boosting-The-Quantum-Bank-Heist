@@ -1,0 +1,12 @@
+Metric,Result
+Top 10 candidates,10.0
+Selected customers,6.0
+Contact budget used,12.0
+Budget limit,25.0
+Capacity used,14.0
+Capacity limit,22.0
+Classical expected net value,39.92586925037328
+QAOA expected net value,36.7327593076059
+Probability of at least 3 successes,0.5733472060042691
+Probability percentage,57.33472060042691
+Feasible combinations,210.0

@@ -1,0 +1,9 @@
+check,result
+candidate_records,100
+unique_candidate_ids,100
+duplicate_candidate_ids,0
+candidate_ids_missing_from_stage2,0
+provisional_ids,100
+provisional_ids_in_candidate_pool,100
+provisional_ids_in_stage2,100
+provisional_mapping_verified,False
